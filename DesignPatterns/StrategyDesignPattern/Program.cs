@@ -34,7 +34,9 @@ namespace StrategyDesignPattern
             CmnDuck.SetQuackbehaviour(new SpecialQuack());
             CmnDuck.flyBehaviour.Fly();
             CmnDuck.quackBehaviour.Quack();
-
+            Console.WriteLine("Changing the Quackk behaviour");
+            CmnDuck.SetQuackbehaviour(new ScreamingQuack());
+            CmnDuck.quackBehaviour.Quack();
 
 
             Console.ReadLine();
